@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riidee Profile Redirect</title>
+</head>
+<body>
+    <script>
+        // Extract the userID from the URL query parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const userID = urlParams.get('userID');
+
+        if (userID) {
+            // Redirect to the app deep link with the dynamic userID
+            window.location.href = "riidee://user/profile?userID=" + userID;
+        } else {
+            // Fallback if no userID is provided in the URL
+            document.body.innerHTML = "<h1>User ID not found</h1><p>Please provide a valid User ID in the URL.</p>";
+        }
+    </script>
+
+    <p>Redirecting to the Riidee app...</p>
+</body>
+</html>
