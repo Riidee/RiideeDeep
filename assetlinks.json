@@ -3,9 +3,9 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.yourapp.package",
+      "package_name": "com.release_2.riidee2",
       "sha256_cert_fingerprints": [
-        "XX:XX:XX:...:XX",  // Your app’s SHA-256 fingerprint
+        "CD:6F:8A:14:A7:1E:FC:66:42:6F:18:00:22:11:FF:B3:05:D4:51:C5:C1:9C:B2:D7:66:C3:8A:0A:7C:AB:55:54"
       ]
     }
   }
