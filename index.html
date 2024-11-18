@@ -13,7 +13,7 @@
 
         if (userID) {
             // Redirect to the app deep link with the dynamic userID
-            window.location.href = "https://riidee.github.io/RiideeDeep?userID=" + userID;
+            window.location.href = "riidee://user/profile?userID=" + userID;
         } else {
             // Fallback if no userID is provided in the URL
             document.body.innerHTML = "<h1>User ID not found</h1><p>Please provide a valid User ID in the URL.</p>";
